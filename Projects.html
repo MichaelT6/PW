@@ -1,13 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael's Personal Website</title>
+
+  <!-- Bootstrap 3 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>this is a link to my github witch has all of my past and present Projects
-        <link rel="stylesheet" href="https://github.com/">
-    </p>
+  <nav class="navbar navbar-inverse custom-navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- Mobile Toggle Button (down arrow instead of hamburger) -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <i class="fa-solid fa-arrow-down"></i>
+        </button>
+        
+
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <!-- RIGHT NAV LINKS -->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="Index.html"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="about.html"><i class="fa fa-user"></i> About</a></li>
+          <li><a href="Projects.html"><i class="fa fa-code"></i> Projects</a></li>
+          <li><a href="resume.html"><i class="fa fa-envelope"></i> Resume</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section>
+    <div class="container">
+      <h1 style="color: black;">Projects</h1>
+      <p style="color: black;">Welcome to the Projects page! Here you'll find a showcase of my work.</p>
+      <p><a class="btn btn-default" href="https://github.com/MichaelT6">View projects</a></p>
+      <!-- Add your project details here -->
+    </div>
+  </section>
+  
+
+  <!-- Bootstrap 3 JS (requires jQuery) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
 </html>

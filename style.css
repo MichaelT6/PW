@@ -1,15 +1,124 @@
-.nav-link {
-    position: fixed;
-    right: 25;
+/* Reset and base */
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background-color: #d1c6a6; /* original warm background */
+  color: #D4DE95; /* original default text color */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Navbar */
+.navbar-inverse {
+  background-color: #52584d; /* original dark navbar */
+  border-color: #52584d;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar-inverse .navbar-brand {
+  color: #D4DE95;
+  font-weight: 600;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #D4DE95;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: black;
+}
+
+/* Main layout */
+.site-main {
+  padding: 40px 0 80px;
+}
+.hero {
+  text-align: left;
+  margin-bottom: 30px;
+}
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+  color: #111;
+}
+.lead {
+  color: #111;
+  margin: 0 0 20px;
+}
+
+.profile {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  background: rgba(255,255,255,0.06);
+  padding: 20px;
+  border-radius: 6px;
+}
+.profile-photo img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+.profile-info h2 {
+  margin-top: 0;
+  color: #111;
+}
+
+.btn-default {
+  color: #222;
+  background: #D4DE95;
+  border: none;
+}
+.btn-primary {
+  background: #52584d;
+  border: none;
+  color: #fff;
+}
+
+@media (max-width: 640px) {
+  .profile { flex-direction: column; text-align: center; }
+  .profile-photo img { width: 140px; height: 140px; }
+  .navbar-inverse .navbar-nav { display: none; }
+  .navbar-inverse .navbar-nav.open { display: block; }
+  .navbar-toggle { display: inline-block; }
+}
+
+/* Mobile toggle (simple) */
+.navbar-toggle {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 6px 8px;
+  color: #D4DE95;
+  display: none;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 18px;
+  height: 2px;
+  background: #D4DE95;
+  margin: 3px 0;
+}
+.navbar-toggle.open { outline: none; }
+.navbar-nav { list-style: none; padding-left: 0; margin: 0; }
+.navbar-nav > li { display: inline-block; margin-left: 12px; }
+.navbar-nav > li > a { text-decoration: none; }
+
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("path/to/mycustomfont.woff2") format("woff2"),
+       url("path/to/mycustomfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+selector {
+  font-family: "MyCustomFont", sans-serif;
 }
 
 
-body{
-    background-color: black;
-}
 
-
-
-
-/* #D4DE95 */
 
